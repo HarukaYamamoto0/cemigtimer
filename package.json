@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "start": "electron-forge start",
-    "watch": "nodemon --ext 'js,html,css' --exec electron .",
+    "dev": "nodemon --ext 'js,html,css' --exec electron .",
+    "lint": "biome lint --write *",
+    "format": "biome format --write *",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
@@ -15,6 +17,7 @@
     "electron-squirrel-startup": "^1.0.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@electron-forge/cli": "^7.6.0",
     "@electron-forge/maker-deb": "^7.6.0",
     "@electron-forge/maker-rpm": "^7.6.0",
@@ -32,13 +35,7 @@
     "url": "https://harukadev.com"
   },
   "license": "Apache-2.0",
-  "keywords": [
-    "electron",
-    "timer",
-    "call-center",
-    "cronometro",
-    "productivity"
-  ],
+  "keywords": ["electron", "timer", "call-center", "cronometro", "productivity"],
   "homepage": "https://github.com/HarukaYamamoto0/cemigtimer",
   "repository": "github:HarukaYamamoto0/cemigtimer.git",
   "bugs": {

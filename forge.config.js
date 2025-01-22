@@ -1,61 +1,61 @@
-import { FusesPlugin } from "@electron-forge/plugin-fuses";
-import { FuseV1Options, FuseVersion } from "@electron/fuses";
+import { FusesPlugin } from '@electron-forge/plugin-fuses';
+import { FuseV1Options, FuseVersion } from '@electron/fuses';
 
 export const packagerConfig = {
   asar: true,
-  executableName: "cemigtimer",
+  executableName: 'cemigtimer',
   config: {
     options: {
-      icon: "./assets/iconTemplate.png",
-      productName: "Cemig Timer",
+      icon: './assets/iconTemplate.png',
+      productName: 'Cemig Timer',
     },
   },
 };
 export const rebuildConfig = {};
 export const makers = [
   {
-    name: "@electron-forge/maker-squirrel",
+    name: '@electron-forge/maker-squirrel',
     config: {
       options: {
-        icon: "./assets/iconTemplate.png",
-        productName: "Cemig Timer",
+        icon: './assets/iconTemplate.png',
+        productName: 'Cemig Timer',
       },
     },
   },
   {
-    name: "@electron-forge/maker-zip",
-    platforms: ["darwin"],
+    name: '@electron-forge/maker-zip',
+    platforms: ['darwin'],
     config: {
       options: {
-        icon: "./assets/iconTemplate.png",
-        productName: "Cemig Timer",
+        icon: './assets/iconTemplate.png',
+        productName: 'Cemig Timer',
       },
     },
   },
   {
-    name: "@electron-forge/maker-deb",
-    platforms: ["linux"],
+    name: '@electron-forge/maker-deb',
+    platforms: ['linux'],
     config: {
       options: {
-        icon: "./assets/iconTemplate.png",
-        productName: "Cemig Timer",
+        icon: './assets/iconTemplate.png',
+        productName: 'Cemig Timer',
       },
     },
   },
   {
-    name: "@electron-forge/maker-rpm",
-    platforms: ["linux"],
+    name: '@electron-forge/maker-rpm',
+    platforms: ['linux'],
     config: {
       options: {
-        icon: "./assets/iconTemplate.png",
-        productName: "Cemig Timer",
+        icon: './assets/iconTemplate.png',
+        productName: 'Cemig Timer',
       },
     },
   },
 ];
 export const plugins = [
   {
-    name: "@electron-forge/plugin-auto-unpack-natives",
+    name: '@electron-forge/plugin-auto-unpack-natives',
     config: {},
   },
   new FusesPlugin({

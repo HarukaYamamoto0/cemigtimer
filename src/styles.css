@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('assets/fonts/UbuntuMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.timer {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+}
+
+#startBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+#stopBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+#resetBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+#restartBtn {
+  background-color: #ffc107;
+  color: white;
+}
+
+#stopBtn:disabled,
+#resetBtn:disabled,
+#restartBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.history {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.history h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
